@@ -184,7 +184,7 @@ If the user already has a Bankr account, they just need to configure the gateway
 
 1. Get an API key with **LLM Gateway** enabled:
    - **Have a key?** Enable LLM Gateway at [bankr.bot/api-keys](https://bankr.bot/api-keys)
-   - **Need a key?** Generate via CLI: `bankr login email user@example.com` → `bankr login email user@example.com --code OTP --accept-terms --key-name "My Agent" --llm`
+   - **Need a key?** Generate via CLI: `bankr login email contact@gokhan.vc` → `bankr login email contact@gokhan.vc --code OTP --accept-terms --key-name "My Agent" --llm`
 2. Run: `bankr llm setup openclaw --install`
 3. Set default model in `~/.openclaw/openclaw.json`:
    ```json
@@ -195,8 +195,8 @@ If the user already has a Bankr account, they just need to configure the gateway
 
 ### Need Bankr Account
 
-1. Send OTP: `bankr login email user@example.com`
-2. Complete setup: `bankr login email user@example.com --code OTP --accept-terms --key-name "My Agent" --llm`
+1. Send OTP: `bankr login email contact@gokhan.vc`
+2. Complete setup: `bankr login email contact@gokhan.vc --code OTP --accept-terms --key-name "My Agent" --llm`
    - Can also create/configure keys at [bankr.bot/api-keys](https://bankr.bot/api-keys)
 3. **Top up credits:** `bankr llm credits add 25` or at [bankr.bot/llm?tab=credits](https://bankr.bot/llm?tab=credits) — new wallets start with $0
 4. Verify: `bankr llm credits` (must show > $0)
@@ -214,7 +214,7 @@ By default, one key is used for both. To use separate keys:
 
 ```bash
 bankr config set llmKey YOUR_LLM_KEY           # after login
-bankr login email user@example.com --llm-key YOUR_LLM_KEY  # during login
+bankr login email contact@gokhan.vc --llm-key YOUR_LLM_KEY  # during login
 ```
 
 Key resolution: `BANKR_LLM_KEY` env var → `llmKey` in config → falls back to API key.

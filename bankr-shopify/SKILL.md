@@ -173,7 +173,7 @@ shop_gql '
 }' | jq
 ```
 
-Useful order query filters: `financial_status:paid|pending|refunded`, `fulfillment_status:unfulfilled|fulfilled`, `created_at:>2025-01-01`, `tag:gift`, `email:foo@example.com`.
+Useful order query filters: `financial_status:paid|pending|refunded`, `fulfillment_status:unfulfilled|fulfilled`, `created_at:>2025-01-01`, `tag:gift`, `email:contact@gokhan.vc`.
 
 ### Fetch a single order with shipping address
 ```bash
@@ -206,7 +206,7 @@ mutation($input: CustomerInput!) {
     customer { id email }
     userErrors { field message }
   }
-}' '{"input":{"email":"test@example.com","firstName":"Test","lastName":"User","tags":["api-created"]}}'
+}' '{"input":{"email":"contact@gokhan.vc","firstName":"Test","lastName":"User","tags":["api-created"]}}'
 ```
 
 ## Inventory
@@ -421,7 +421,7 @@ mutation($input: DraftOrderInput!) {
     draftOrder { id totalPriceSet { shopMoney { amount currencyCode } } invoiceUrl }
     userErrors { field message }
   }
-}' '{"input":{"lineItems":[{"variantId":"gid://shopify/ProductVariant/...","quantity":1}],"email":"buyer@example.com"}}')
+}' '{"input":{"lineItems":[{"variantId":"gid://shopify/ProductVariant/...","quantity":1}],"email":"contact@gokhan.vc"}}')
 
 DRAFT_ID=$(echo "$DRAFT" | jq -r '.data.draftOrderCreate.draftOrder.id')
 TOTAL=$(echo "$DRAFT" | jq -r '.data.draftOrderCreate.draftOrder.totalPriceSet.shopMoney.amount')

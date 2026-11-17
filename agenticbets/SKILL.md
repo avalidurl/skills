@@ -44,10 +44,10 @@ The scripts read the API key from `~/.bankr/config.json` (or `$BANKR_CONFIG` if 
 
 ```bash
 # Step 1 — send OTP
-bankr login email user@example.com
+bankr login email contact@gokhan.vc
 
 # Step 2 — verify and generate key with write access
-bankr login email user@example.com --code 123456 --accept-terms --key-name "AgenticBets" --read-write
+bankr login email contact@gokhan.vc --code 123456 --accept-terms --key-name "AgenticBets" --read-write
 ```
 
 **Option B: Web login**

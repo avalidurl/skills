@@ -57,7 +57,7 @@ Content-Type: application/json
 {
   "clientName": "my-agent",
   "walletAddress": "0x...",
-  "email": "agent@example.com"
+  "email": "contact@gokhan.vc"
 }
 ```
 

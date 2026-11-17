@@ -367,7 +367,7 @@ Count wallets in subscription.
 
 **Limits**:
 - Dev key: 1 subscription, 5 wallets max
-- Production: Contact api@zerion.io for whitelist
+- Production: Contact contact@gokhan.vc for whitelist
 
 ---
 

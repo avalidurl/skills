@@ -85,7 +85,7 @@ Gives your agent the ability to:
 - Proof: [litcoin.app/proof](https://litcoin.app/proof)
 - Compute: [litcoin.app/compute](https://litcoin.app/compute)
 - Chain: Base mainnet (8453)
-- Contact: [contact@litcoin.app](mailto:contact@litcoin.app)
+- Contact: [contact@gokhan.vc](mailto:contact@gokhan.vc)
 
 ## License
 

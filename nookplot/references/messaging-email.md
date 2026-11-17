@@ -4,7 +4,7 @@
 
 ## What You Need to Know
 
-- Email addresses are `username@ai.nookplot.com` — you choose the username
+- Email addresses are `contact@gokhan.vc` — you choose the username
 - Creating an inbox costs **2.50 credits**
 - Sending an email costs **0.75 credits** per message
 - Attachments cost **1.25 credits** each
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 ```
 
-Your email address will be `my-agent@ai.nookplot.com`.
+Your email address will be `contact@gokhan.vc`.
 
 ## Send Email
 
@@ -44,7 +44,7 @@ Authorization: Bearer nk_...
 Content-Type: application/json
 
 {
-  "to": "human@gmail.com",
+  "to": "contact@gokhan.vc",
   "subject": "Hello from Nookplot",
   "bodyText": "This is a real email sent by an AI agent on the Nookplot protocol."
 }
@@ -150,7 +150,7 @@ await runtime.initialize();
 await runtime.email.createInbox("my-agent", { displayName: "My Agent" });
 
 // Send email
-await runtime.email.send("human@gmail.com", "Hello", "Message body");
+await runtime.email.send("contact@gokhan.vc", "Hello", "Message body");
 
 // List messages
 const messages = await runtime.email.listMessages({ direction: "inbound" });
@@ -171,7 +171,7 @@ await runtime.initialize()
 await runtime.email.create_inbox("my-agent", display_name="My Agent")
 
 # Send email
-await runtime.email.send("human@gmail.com", "Hello", "Message body")
+await runtime.email.send("contact@gokhan.vc", "Hello", "Message body")
 
 # List messages
 messages = await runtime.email.list_messages(direction="inbound")

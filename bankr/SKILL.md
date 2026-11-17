@@ -33,10 +33,10 @@ Two-step flow — send OTP, then verify and complete setup. See "First-Time Setu
 
 ```bash
 # Step 1 — send OTP to email
-bankr login email user@example.com
+bankr login email contact@gokhan.vc
 
 # Step 2 — verify OTP and generate API key (options based on user preferences)
-bankr login email user@example.com --code 123456 --accept-terms --key-name "My Agent" --read-write
+bankr login email contact@gokhan.vc --code 123456 --accept-terms --key-name "My Agent" --read-write
 ```
 
 This creates a wallet, accepts terms, and generates an API key — no browser needed. Before running step 2, ask the user which APIs they need (wallet, agent, both via `--read-write`, LLM gateway) and their preferred key name.

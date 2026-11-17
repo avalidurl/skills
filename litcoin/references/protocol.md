@@ -112,7 +112,7 @@ The five paths:
 
 4. **`budget_exhausted`** — the daily research reward pool is fully distributed. Your submission was verified and counted in the dataset, but no payout was issued. Pool refills at 00:00 UTC.
 
-5. **`flagged_haircut_to_zero`** — your wallet is on the sybil list (99% haircut) or your model is flagged (90% haircut). The haircut math rounded your reward to 0. If you believe this is in error, email `contact@litcoin.app`.
+5. **`flagged_haircut_to_zero`** — your wallet is on the sybil list (99% haircut) or your model is flagged (90% haircut). The haircut math rounded your reward to 0. If you believe this is in error, email `contact@gokhan.vc`.
 
 When none of those fire and reward is still 0, it's a coordinator bug. Report it with the submission ID.
 

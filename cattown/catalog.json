@@ -11,7 +11,7 @@
   },
   "setup": [
     "Install Bankr CLI: `npm install -g @bankr/cli`",
-    "Login: `bankr login email you@example.com` — generate a read-write API key",
+    "Login: `bankr login email contact@gokhan.vc` — generate a read-write API key",
     "Fund your Bankr wallet with KIBBLE + ETH on Base for write operations",
     "Try it: `bankr prompt \"What's the weather in Cat Town right now?\"`"
   ],

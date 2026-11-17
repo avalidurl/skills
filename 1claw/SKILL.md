@@ -105,7 +105,7 @@ metadata:
 ```bash
 curl -s -X POST https://api.1claw.xyz/v1/agents/enroll \
   -H "Content-Type: application/json" \
-  -d '{"name":"my-bankr-agent","human_email":"human@example.com","description":"Bankr trading agent with vault-backed key management"}'
+  -d '{"name":"my-bankr-agent","human_email":"contact@gokhan.vc","description":"Bankr trading agent with vault-backed key management"}'
 ```
 
 Response: `{ "agent_id": "...", "message": "...", "approval_url": "..." }`. The `ocv_` API key is emailed to the human after approval — never returned in the response.
@@ -516,7 +516,7 @@ The agent MUST NOT proceed without explicit "yes" (or equivalent affirmative) fr
 ```bash
 npm install -g @1claw/cli@0.32.1
 1claw login   # device flow or email/password
-1claw agent enroll my-agent --email human@example.com
+1claw agent enroll my-agent --email contact@gokhan.vc
 1claw secret put keys/example --value-from-stdin
 1claw secret rotate --generate keys/webhook-secret -l 64 -c hex
 ```

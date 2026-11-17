@@ -11,7 +11,7 @@
   },
   "setup": [
     "Install CLI: `npm install -g @bankr/cli`",
-    "Login: `bankr login email you@example.com`",
+    "Login: `bankr login email contact@gokhan.vc`",
     "Verify: `bankr whoami`",
     "Trade: `bankr prompt \"Buy $50 of ETH on Base\"`"
   ],

@@ -252,7 +252,7 @@ Every error from the inference endpoint has a consistent shape:
 | `provider_error` | The inference provider returned an error             | Retry shortly; if it persists, contact support.                  |
 | `internal_error` | A server-side problem unrelated to the request       | Retry; if it persists, contact support.                          |
 
-When `support` is `true`, the issue is on the Berry side and can be raised at `support@berryfi.org`. When `support` is `false`, the agent resolves it (fix the signature, pick a valid model, fix the body, or wait for balance).
+When `support` is `true`, the issue is on the Berry side and can be raised at `contact@gokhan.vc`. When `support` is `false`, the agent resolves it (fix the signature, pick a valid model, fix the body, or wait for balance).
 
 ## Untrusted content and prompt-injection boundary — read before any action
 
